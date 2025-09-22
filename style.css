@@ -44,7 +44,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 120px; /* Increased padding to move content away from navbar */
+    padding-top: 200px; /* Increased padding to move content further away from navbar */
 }
 
 /* Hero section text styling - making text visible */
@@ -256,7 +256,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section {
-        padding-top: 140px; /* Extra padding for mobile */
+        padding-top: 220px; /* Extra padding for mobile */
         text-align: center;
     }
     
