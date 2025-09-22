@@ -37,14 +37,33 @@ body {
     color: var(--accent-color) !important;
 }
 
-/* Hero Section */
+/* Hero Section - Fixed background and spacing */
 .hero-section {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%) !important;
     min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 80px;
+    padding-top: 120px; /* Increased padding to move content away from navbar */
+}
+
+/* Hero section text styling - making text black */
+.hero-section h1,
+.hero-section .display-4 {
+    color: var(--text-dark) !important;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p,
+.hero-section .lead {
+    color: var(--text-dark) !important;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 .hero-section::before {
@@ -239,12 +258,19 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section {
-        padding-top: 100px;
+        padding-top: 140px; /* Extra padding for mobile */
         text-align: center;
     }
     
-    .hero-section h1 {
+    .hero-section h1,
+    .hero-section .display-4 {
         font-size: 2.5rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .hero-section p,
+    .hero-section .lead {
+        padding: 0.8rem 1.5rem;
     }
     
     .section-title {
