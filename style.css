@@ -47,22 +47,20 @@ body {
     padding-top: 120px; /* Increased padding to move content away from navbar */
 }
 
-/* Hero section text styling - making text black */
+/* Hero section text styling - making text visible */
 .hero-section h1,
 .hero-section .display-4 {
-    color: var(--text-dark) !important;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1rem 2rem;
-    border-radius: 10px;
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: 700 !important;
     margin-bottom: 1.5rem;
 }
 
 .hero-section p,
 .hero-section .lead {
-    color: var(--text-dark) !important;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1rem 2rem;
-    border-radius: 10px;
+    color: #ffffff !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    font-weight: 500 !important;
     margin-bottom: 2rem;
 }
 
